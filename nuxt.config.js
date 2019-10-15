@@ -50,13 +50,13 @@ export default {
         {
             src: '@/plugins/antd-ui'
         },
-        { src: '~/plugins/axios', ssr: false },
-        { src: '~/plugins/vuex-persist', ssr: false },
-        { src: '~/plugins/vue-swiper.js', ssr: false },
-        { src: '~/plugins/vuerify.js', ssr: false },
-        { src: '~/plugins/vue-clipboard.js', ssr: false },
-        { src: '~/plugins/toast.js', ssr: false },
-        { src: '~/plugins/vuex-persistedstate.js', ssr: false }
+        { src: '~/plugins/axios', ssr: true },
+        { src: '~/plugins/vuex-persist', ssr: true },
+        { src: '~/plugins/vue-swiper.js', ssr: true },
+        { src: '~/plugins/vuerify.js', ssr: true },
+        { src: '~/plugins/vue-clipboard.js', ssr: true },
+        { src: '~/plugins/toast.js', ssr: true },
+        { src: '~/plugins/vuex-persistedstate.js', ssr: true }
         // { src: '~/plugins/echarts.js', ssr: false },
         // { src: '~/plugins/clipboard.js', ssr: false }
         // { src: '~/plugins/touch.js', ssr: false }
