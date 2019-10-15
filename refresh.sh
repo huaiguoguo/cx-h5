@@ -2,7 +2,7 @@
 
 
 echo "chaoxie start"
-cd /www/wwwroot/chaoxie/h5/demo/ &&
+cd `/www/wwwroot/chaoxie/h5/demo/` &&
 pm2 stop 0 &&
 git pull &&
 npm run build &&
