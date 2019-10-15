@@ -230,13 +230,13 @@ export default {
                 window.screen.height === 896
 
             if (isIPhoneX || isIPhoneXSMax || isIPhoneXR) {
-                this.marginTopObject = 'top: 50px'
+                this.marginTopObject = 'top: 17%'
                 // sdf dsf df sddsfds
                 this.documentDom = 'height: 160px; margin-top: 20px'
                 this.shopDom = 'height: 150px;background-size: 100% 100%; margin-top: 15px'
-                this.exchangeDom = 'margin-top: 20px'
+                this.exchangeDom = 'margin-top: 10px'
                 this.imgDom = 'max-height: auto; height: 100%;'
-                this.championTop = 'top: 18%;'
+                this.championTop = 'top: 22%;'
             } else {
                 console.log('xxxx')
             }
@@ -550,9 +550,9 @@ export default {
             width: 53px;
             height: 53px;
             // background-color: #000;
-            position: fixed;
+            position: absolute;
             z-index: 8888;
-            top: 55px;
+            top: 20%;
             left: 30px;
             img {
                 max-width: 100%;
@@ -565,7 +565,7 @@ export default {
             height: 20px;
             position: absolute;
             z-index: 8888;
-            top: 8%;
+            top: 20%;
             left: 40%;
             right: 60%;
             img {
@@ -579,8 +579,8 @@ export default {
         align-items: center;
         width: 100%;
         height: 20%;
-        min-height:258px;
-        margin-top: 16px;
+        min-height:278px;
+        margin-top: 10px;
         // background-color: #f5c8c8;
         border: solid 1px #e3e2e2;
         .swiper-wrapper {
@@ -780,16 +780,24 @@ export default {
             }
             .notice {
                 width: 100%;
-                height: 124px;
+                height: 48%;
                 // background-color: black;
                 border-radius: 10px;
+                img{
+                    width:100%;
+                    height: 100%;
+                }
             }
             .help {
                 // background-color: black;
                 width: 100%;
-                height: 124px;
+                height: 48%;
                 border-radius: 10px;
-                // margin-top: 10px;
+                margin-top: 2%;
+                img{
+                    width:100%;
+                    height: 100%;
+                }
             }
         }
     }

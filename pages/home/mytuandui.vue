@@ -25,26 +25,28 @@
         </div>
         <div class="content">
             <div class="item-list" :style="itemListMarginTop">
-                <div v-for="(item, index) in list.child" :key="index">
-                    <div v-if="list.child == 0" class="item" style="display:none">
-                        <div class="nodata">
-                            <img src="~static/img/nodata.png" alt />
+                <div v-if="list.child == 0" class="item">
+                            <div class="nodata">
+                                <img src="~static/img/nodata.png" alt />
+                            </div>
+                </div>
+                <block v-if="list.length != 0">
+                    <div v-for="(item, index) in list.child" :key="index">
+                        <div class="item">
+                            <!-- <div v-if="list.child != 0" class="item" style="display:none"> -->
+                                <div class="name">
+                                    <span>{{item.name}}</span>
+                                    <span>{{item.phone}}</span>
+                                </div>
+                                <div class="person">团队：{{item.teamMemberNumber}}人</div>
+                                <div>
+                                    <span>总业绩：</span>
+                                    <span>￥{{item.yongJin}}</span>
+                                </div>
+                            <!-- </div> -->
                         </div>
                     </div>
-                    <div class="item">
-                        <!-- <div v-if="list.child != 0" class="item" style="display:none"> -->
-                            <div class="name">
-                                <span>{{item.name}}</span>
-                                <span>{{item.phone}}</span>
-                            </div>
-                            <div class="person">团队：{{item.teamMemberNumber}}人</div>
-                            <div>
-                                <span>总业绩：</span>
-                                <span>￥{{item.yongJin}}</span>
-                            </div>
-                        <!-- </div> -->
-                    </div>
-                </div>
+                </block>
                 <!-- <div class="item">
                     <div>
                         <span>刘宁</span>

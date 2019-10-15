@@ -8,7 +8,7 @@
           <div>
             <img src="~static/img/seach.png" alt />
           </div>
-          <input type="text" placeholder="yeezy boost 350 v2 cloud white" />
+          <input type="text" class="inputObj" placeholder="yeezy boost 350 v2 cloud white" />
         </div>
         <div class="top-right">
           <img src="~static/img/ALL-seach.png" alt />
@@ -137,6 +137,11 @@ input {
     outline: none;
     border: none;
 }
+
+.inputObj{
+    font-size: 0.4rem;
+}
+
 .container {
     .header {
         width: 100%;

@@ -34,7 +34,7 @@
       </div>
 
       <div class="nav_item account">
-        <div class="account_menu level" @click="redirect('/user/myBalance')">
+        <div class="account_menu level" >
           <span>
             <img src="~static/img/left_nav/recharge.png" alt />
           </span>
@@ -46,7 +46,7 @@
           </span>
           <span>提现</span>
         </div>
-        <div class="account_menu brokerage" @click="redirect('/user/myBalance')">
+        <div class="account_menu brokerage">
           <span>
             <img src="~static/img/left_nav/transferByfunds.png" alt />
           </span>
