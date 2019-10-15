@@ -18,14 +18,14 @@
         <div class="cout">
             <div>
                 <span class="co">
-                    <span class="label"> 静态总和：</span>
-                    <span>{{dynamicData.allMoneyStatic?dynamicData.allMoneyStatic:''}}</span>
+                    <span class="label" style="color:#666;font-weight:700;"> 当日佣金：</span>
+                    <span>{{dynamicData.allMoneyStatic?dynamicData.allMoneyStatic:'0'}}</span>
                 </span>
             </div>
             <div>
                 <span class="co">
-                    <span class="label"> 动态总和：</span>
-                    <span>{{dynamicData.allMoney?dynamicData.allMoney:''}}</span>
+                    <span class="label" style="color:#666;;font-weight:700;"> 当日奖励：</span>
+                    <span>{{dynamicData.allMoney?dynamicData.allMoney:'0'}}</span>
                 </span>
             </div>
         </div>

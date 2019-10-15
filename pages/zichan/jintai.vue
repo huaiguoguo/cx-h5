@@ -18,19 +18,19 @@
         <div class="cout">
             <div>
                 <span class="co">
-                    静态总和：
-                    <span>{{dynamicData.allMoneyStatic?dynamicData.allMoneyStatic:''}}</span>
+                    当日佣金：
+                    <span>{{dynamicData.allMoneyStatic?dynamicData.allMoneyStatic:'0'}}</span>
                 </span>
             </div>
             <div>
                 <span class="co">
-                    动态总和：
-                    <span>{{dynamicData.allMoney?dynamicData.allMoney:''}}</span>
+                    当日奖励：
+                    <span>{{dynamicData.allMoney?dynamicData.allMoney:'0'}}</span>
                 </span>
             </div>
         </div>
 
-        <div v-if="staticList" class="list">
+        <div v-if="staticList.length > 0" class="list">
             <div v-for="(item, index) in staticList" :key="index">
                 <div class="list-item">
                     <div class="item-left" @click="$router.push(`/zichan/jingtaiDetail#${item.orderSn}`)">
@@ -74,7 +74,7 @@ export default {
     components: {},
     data() {
         return {
-            staticList: '',
+            staticList: [],
             marginTopObject: '',
             dynamicData: ''
         }

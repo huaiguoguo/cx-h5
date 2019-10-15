@@ -581,7 +581,7 @@ export default {
 //     width: 190px !important;
 // }
 .font_size{
-    font-size: 24px;
+    font-size: 34px;
 }
 .container {
     // background-color: red;
@@ -591,7 +591,7 @@ export default {
         right: 0;
         top: 30%;
         width: 80%;
-        height: 200px;
+        height: 300px;
         margin-left: 10%;
         // margin: 0 auto;
         border-radius: 10px;
@@ -599,20 +599,22 @@ export default {
         box-shadow: 0px 15px 15px #ccc;
         text-align: center;
         padding: 35px 0px;
+        font-size: 40px;
     }
 
     .cancelBtn,
     .confirmBtn {
-        width: 140px;
-        height: 45px;
+        width: 240px;
+        height: 55px;
         display: inline-block;
         margin: 5px;
         background-color: #269877;
         border-radius: 5px;
         line-height: 39px;
         text-align: center;
-        margin-top: 10px;
+        margin-top: 40px;
         padding: 3px 15px;
+        font-size: 32px;
         color: snow;
     }
     // .comfimTitles{
@@ -932,7 +934,7 @@ export default {
             height: 0;
         }
         .midpx {
-            font-size: 24px;
+            font-size: 34px;
         }
         .code-box {
             position: absolute;
@@ -942,7 +944,7 @@ export default {
             flex-direction: column;
             align-items: center;
             width: 100%;
-            height: 670px;
+            height: 860px;
             padding: 0 20px;
             background: #fff;
             .code-box-top {
@@ -987,64 +989,67 @@ export default {
                     margin: 10px 0;
                 }
                 .img-box {
-                    width: 227px;
-                    height: 227px;
+                    width: 350px;
+                    height: 350px;
                 }
                 .alpay {
-                    font-size: 24px;
+                    font-size: 34px;
                     color: #333333;
                 }
                 .USDTpay {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    font-size: 18px;
                     color: #666666;
+                    .midpx{
+                        font-size: 27px;
+                    }
                 }
                 .bankcard {
                     margin-top: 50px;
+                     font-size: 28px;
                     div {
                         span:nth-child(1) {
-                            font-size: 24px;
+                            font-size: 28px;
                             color: #666666;
                         }
                         span:nth-child(2) {
-                            font-size: 24px;
+                            font-size: 28px;
                             color: #333333;
                         }
                     }
                 }
             }
             .msut_tag {
-                margin-top: 20px;
+                margin-top: 10px;
                 text-align: center;
                 div:nth-child(1) {
                     span:nth-child(1) {
                         color: #666;
-                        font-size: 24px;
+                        font-size: 34px;
                     }
                     span:nth-child(2) {
                         color: #007eff;
-                        font-size: 30px;
+                        font-size: 34px;
                     }
                     span:nth-child(3) {
                         color: #007eff;
-                        font-size: 20px;
+                        font-size: 34px;
                     }
                 }
                 div:nth-child(2) {
                     color: #ff0101;
-                    font-size: 20px;
+                    font-size: 34px;
                 }
             }
             .buyNow {
-                width: 200px;
-                height: 50px;
-                line-height: 50px;
+                width: 250px;
+                height: 65px;
+                line-height: 65px;
                 text-align: center;
-                font-size: 30px;
+                font-size: 35px;
                 color: #fff;
-                margin-top: 10px;
+                margin-top: 5px;
                 background-color: #269877;
             }
         }

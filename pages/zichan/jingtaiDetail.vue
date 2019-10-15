@@ -34,7 +34,7 @@
                     </div>
                     <div class="rate">
                         <p>{{order.getMoney}}</p>
-                        <p>预计产出佣金</p>
+                        <p>已产出佣金</p>
                     </div>
                 </div>
             </div>

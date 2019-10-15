@@ -186,7 +186,7 @@ export default {
         }
     },
     mounted() {
-        // this.isIPhoneX()
+        this.isIPhoneX()
         this.getTopBanner()
         this.getHomeHangQing()
         this.getUser()
