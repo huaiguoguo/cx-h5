@@ -29,10 +29,7 @@ export default {
         ]
     },
     render: {
-        resourceHints: {
-            prefetch: false,
-            preload: false
-        }
+        resourceHints: false
     },
     generate: {
         dir: 'dist'
