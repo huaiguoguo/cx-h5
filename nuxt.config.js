@@ -28,6 +28,12 @@ export default {
             }
         ]
     },
+    render: {
+        resourceHints: {
+            prefetch: false,
+            preload: false
+        }
+    },
     generate: {
         dir: 'dist'
     },

@@ -3,8 +3,8 @@
 
 echo "chaoxie start"
 cd `/www/wwwroot/chaoxie/h5/demo/` &&
-pm2 stop 0 &&
+pm2 stop 2 &&
 git pull &&
 npm run build &&
-npm start 0
+npm start 2
 echo "chaoxie start success"
