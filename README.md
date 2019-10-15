@@ -1,10 +1,10 @@
-# demo
+# cx-h5
 
 > My premium Nuxt.js project
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ npm run install
 
