@@ -242,7 +242,7 @@ export default {
             }
 
             const isIphone = /iphone/gi.test(window.navigator.userAgent)
-            if (isIphone) {
+            if (isIphone || window.screen.height >= 812) {
                 this.zhangfuDom1 = 'font-weight: 600;font-size: 0.40rem;color:#444444;'
                 this.zhangfuDom2 = 'font-weight: 700;font-size: 0.45rem;'
                 this.zhangfuDom3 = 'font-weight: 700;font-size: 0.34rem;'

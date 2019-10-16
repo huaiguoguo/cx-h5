@@ -1,5 +1,5 @@
 export default {
-    mode: 'universal', // spa universal
+    mode: 'spa', // spa universal
     /*
      ** Headers of the page
      */
