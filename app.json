@@ -2,7 +2,7 @@
     "apps": [
         {
             "name": "cx-h5",
-            "cwd": "/www/wwwroot/cx-h5",
+            "cwd": "/data/wwwroot/cx-h5",
             "script": "start.sh",
             "log_date_format": "YYYY-MM-DD HH:mm Z",
             "error_file": "/var/log/node-app/cx-h5.stderr.log",
