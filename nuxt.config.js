@@ -89,18 +89,18 @@ export default {
      ** See https://axios.nuxtjs.org/options
      */
     axios: {
-        proxy: false, // 表示开启代理
-        https: true, // 表示开启https
+        proxy: true, // 表示开启代理
+        https: false, // 表示开启https
         // baseURL: 'https://api.championapp.vip',
         prefix: '/index.php/home/', // 表示给请求url加个前缀 /api
         host: 'api.championapp.vip', // chaoxieapi.heiwangke.net
-        port: '443',
+        port: '80',
         retry: { retries: 3 },
         credentials: false // 表示跨域请求时是否需要使用凭证
     },
     proxy: {
         '/index.php/': {
-            target: 'https://api.championapp.vip:443', // 目标接口域名
+            target: 'http://api.championapp.vip:80', // 目标接口域名
             changeOrigin: true, // 表示是否跨域
             pathRewrite: {
                 '^/home': '/' // 把 /home 替换成 /
