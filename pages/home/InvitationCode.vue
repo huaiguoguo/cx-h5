@@ -20,9 +20,9 @@
         <textarea ref="input1" class="textarea" name readonly></textarea>
         <div>专属邀请链接</div>
         <div class="selfCode">
-          <input ref="text2" type="text" :value="`https://api.championapp.vip/download/index.html#${userinfo.tuiGuangCode}`" name readonly />
+          <input ref="text2" type="text" :value="`http://api.championapp.vip/download/index.html#${userinfo.tuiGuangCode}`" name readonly />
           <textarea ref="input2" class="textarea" name></textarea>
-          <div v-clipboard:copy="`https://api.championapp.vip/download/index.html#${userinfo.tuiGuangCode}`" v-clipboard:success="onCopy" v-clipboard:error="onError">复制</div>
+          <div v-clipboard:copy="`http://api.championapp.vip/download/index.html#${userinfo.tuiGuangCode}`" v-clipboard:success="onCopy" v-clipboard:error="onError">复制</div>
         </div>
         <div class="InvitationType">
           <div>
