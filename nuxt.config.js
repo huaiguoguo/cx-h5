@@ -1,5 +1,5 @@
 export default {
-    mode: 'spa', // spa universal
+    mode: 'universal', // spa universal
     /*
      ** Headers of the page
      */
@@ -54,8 +54,9 @@ export default {
             src: '@/plugins/antd-ui'
         },
         { src: '~/plugins/axios', ssr: false },
-        { src: '~/plugins/vuex-persist', ssr: false },
-        { src: '~/plugins/vuex-persistedstate.js', ssr: false },
+        { src: '~/plugins/storage', ssr: false },
+        // { src: '~/plugins/vuex-persist', ssr: false },
+        // { src: '~/plugins/vuex-persistedstate.js', ssr: false },
         { src: '~/plugins/vue-swiper.js', ssr: false },
         { src: '~/plugins/vuerify.js', ssr: false },
         { src: '~/plugins/vue-clipboard.js', ssr: false },

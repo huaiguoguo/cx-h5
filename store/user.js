@@ -1,16 +1,3 @@
-// import VuexPersistence from 'vuex-persist'
-import createPersistedState from 'vuex-persistedstate'
-
-// const vuexLocal = new VuexPersistence({
-//     storage: window.localStorage
-// })
-
-const vuexLocal = createPersistedState()
-
-export const strict = true
-
-export const plugins = [vuexLocal]
-
 export const state = () => ({
     leftNavStatus: 0,
     changeCipherEndTimestamp: 0,

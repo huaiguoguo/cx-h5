@@ -36,7 +36,6 @@
         "vue-clipboard2": "^0.3.1",
         "vue2-toast": "^2.1.0",
         "vuerify": "^0.4.0",
-        "vuex-persist": "^2.1.0",
         "vuex-persistedstate": "^2.5.4"
     },
     "devDependencies": {
