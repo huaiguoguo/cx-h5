@@ -145,6 +145,7 @@ input {
 .container {
     .header {
         width: 100%;
+        margin: 20px 0px;
         span {
             display: block;
             width: 100%;

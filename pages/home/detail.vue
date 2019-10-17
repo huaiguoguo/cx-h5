@@ -215,6 +215,7 @@ export default {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        margin: 20px 0px;
         .title {
             width: 100%;
             height: 70px;
