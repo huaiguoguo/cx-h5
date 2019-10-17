@@ -60,8 +60,8 @@ export default {
         { src: '~/plugins/vue-swiper.js', ssr: false },
         { src: '~/plugins/vuerify.js', ssr: false },
         { src: '~/plugins/vue-clipboard.js', ssr: false },
-        // { src: '~/plugins/toast.js', ssr: false },
-        { src: '~/plugins/vant.js', ssr: false }
+        { src: '~/plugins/toast.js', ssr: false }
+        // { src: '~/plugins/vant.js', ssr: false }
         // { src: '~/plugins/echarts.js', ssr: false },
         // { src: '~/plugins/clipboard.js', ssr: false }
         // { src: '~/plugins/touch.js', ssr: false }
@@ -122,6 +122,15 @@ export default {
             }
         },
         transpile: ['vue-echarts', 'resize-detector'],
+        // postcss: {
+        //     autoprefixer: {
+        //         browsers: ['Android >= 4.0', 'iOS >= 7']
+        //     },
+        //     'postcss-pxtorem': {
+        //         rootValue: 37.5,
+        //         propList: ['*']
+        //     }
+        // }
         postcss: [
             require('postcss-px2rem')({
                 remUnit: 75, // 转换基本单位
@@ -129,7 +138,7 @@ export default {
                 // propList: ['*'],
                 // rootValue: 37.5, // 默认根目录字体大小(px)
                 // unitPrecision: 5, // 保留小数位
-                // // selectorBlackList: [''], //过滤的类名
+                // selectorBlackList: [''], //过滤的类名
                 // replace: true, // 默认直接替换属性
                 // mediaQuery: false,
                 // minPixelValue: 12 // 所有小于设置的样式都不被转换
