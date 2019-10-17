@@ -108,9 +108,7 @@ export default {
         }
     },
     beforeCreate() {},
-    created() {
-        this.getBalance()
-    },
+    created() {},
     beforeMount() {},
     mounted() {
         this.isIPhoneX()
@@ -120,7 +118,7 @@ export default {
             _this.$router.push('/user/login')
             return false
         }
-        // this.getBalance()
+        this.getBalance()
         this.tixianLists()
         this.$message.config({
             top: `300px`,
