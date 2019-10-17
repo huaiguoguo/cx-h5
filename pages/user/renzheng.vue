@@ -392,6 +392,7 @@ input {
                     flex: 1;
                     // background: #000;
                     text-align: left;
+                    font-size: 24px;
                 }
                 input {
                     flex: 4;
