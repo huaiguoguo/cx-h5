@@ -387,15 +387,15 @@ input {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                // background: blue;
+                background: blue;
                 span{
                     flex: 1;
-                    // background: #000;
+                    background: #000;
                     text-align: left;
                 }
                 input {
                     flex: 4;
-                    // background: pink;
+                    background: pink;
                     width: 500px;
                     margin-left: 10px;
                     font-size: 24px;
