@@ -394,7 +394,7 @@ input {
                 // background: blue;
                 span{
                     flex: 1.3;
-                    background: #000;
+                    // background: #000;
                     text-align: left;
                     font-size: 24px;
                 }
