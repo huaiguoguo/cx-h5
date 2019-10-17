@@ -94,7 +94,7 @@ export default {
     background-color: #fff;
     box-shadow: 0px 20px 30px -10px rgba(0, 0, 0, 0.13);
     position: fixed;
-    top: 35px;
+    top: 45px;
     z-index: 10;
     .back_content {
         display: flex;

@@ -55,7 +55,7 @@ export default {
         text-align: center;
         font-size: 36px;
         color: #333;
-        margin: 20px 0px;
+        margin-top: 45px;
     }
     .content {
         width: 100%;

@@ -98,13 +98,13 @@ textarea {
         justify-content: space-between;
         flex: auto;
         align-items: center;
-        height: 88px;
-        line-height: 88px;
+        // height: 88px;
+        // line-height: 88px;
         font-size: 36px;
         font-weight: normal;
         font-stretch: normal;
         color: #333;
-        padding: 20px;
+        padding: 45px 0px 20px 0px;
         background: #fff;
         a {
             font-size: 30px;

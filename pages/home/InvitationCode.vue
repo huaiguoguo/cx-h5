@@ -145,7 +145,7 @@ input {
         justify-content: space-between;
         height: 88px;
         line-height: 88px;
-        padding: 35px 20px 0px 20px;
+        padding: 45px 20px 0px 20px;
         text-align: center;
         font-size: 36px;
         color: #fff;
