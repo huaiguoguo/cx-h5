@@ -42,7 +42,6 @@
             <span>CNY:</span>
             <span>￥{{list.money}}</span>
           </div>
-
         </div>
 
       </div>
@@ -167,9 +166,9 @@ export default {
                     username: this.$store.state.user.userInfo.openid
                 })
                 .then((res) => {
-                    res = res.data.data
+                    const result = res.data.data
                     if (res.data.status === 1) {
-                        this.list = res
+                        this.list = result
                     }
                     console.log(res)
                 })
