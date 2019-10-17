@@ -230,7 +230,7 @@ export default {
                 window.screen.height === 896
 
             if (isIPhoneX || isIPhoneXSMax || isIPhoneXR) {
-                this.marginTopObject = 'top: 17%'
+                this.marginTopObject = 'top: 17%;left:5%;'
                 // sdf dsf df sddsfds
                 this.documentDom = 'height: 160px; margin-top: 20px'
                 this.shopDom = 'height: 150px;background-size: 100% 100%; margin-top: 15px'
