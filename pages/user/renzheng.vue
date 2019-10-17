@@ -71,17 +71,17 @@
     <div class="upload">
       <div class="upload1">
         <img :src="thumbnailAlipay" />
-        <input type="file" name="alipay" class="alipaycode" @change="uploadChange($event, 1)" />
+        <input type="file" accept="image/*" mutiple="mutiple" name="alipay" class="alipaycode" @change="uploadChange($event, 1)" />
         <p>上传支付宝收款码</p>
       </div>
       <div class="upload1">
         <img :src="thumbnailWechat" />
-        <input type="file" name="wechat" class="alipaycode" @change="uploadChange($event, 2)" />
+        <input type="file" accept="image/*" mutiple="mutiple" name="wechat" class="alipaycode" @change="uploadChange($event, 2)" />
         <p>上传微信的收款码</p>
       </div>
       <div class="upload1">
         <img :src="thumbnailUstd" />
-        <input type="file" name="file" class="alipaycode" @change="uploadChange($event, 3)" />
+        <input type="file" accept="image/*" mutiple="mutiple" name="file" class="alipaycode" @change="uploadChange($event, 3)" />
         <p>上传usdt的二维码</p>
       </div>
     </div>
