@@ -145,7 +145,7 @@ export default {
         height: 283px;
         line-height: 88px;
         text-align: center;
-        padding: 35px 20px 0px 20px;
+        padding: 45px 20px 0px 20px;
         font-size: 36px;
         color: #fff;
         background-image: url('~static/img/home/myteam_bg.png');

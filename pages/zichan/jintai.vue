@@ -218,7 +218,7 @@ textarea {
         font-size: 36px;
         color: #333;
         text-align: center;
-        margin: 20px 0px;
+        margin-top: 45px;
         // box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.13);
     }
     .content {

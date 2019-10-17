@@ -57,13 +57,14 @@ export default {
     .header {
         display: flex;
         width: 100%;
-        height: 88px;
-        padding: 0 20px;
-        line-height: 88px;
+        // height: 88px;
+        // line-height: 88px;
+        // padding: 0 20px;
         font-size: 36px;
         font-weight: normal;
         font-stretch: normal;
         color: #333;
+        padding: 45px 0px 20px 0px;
         .goback {
             width: 16px;
             // height: 32px;
