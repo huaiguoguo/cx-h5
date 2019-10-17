@@ -144,10 +144,10 @@ export default {
     .header {
         display: flex;
         justify-content: space-between;
-        height: 233px;
+        height: 283px;
         line-height: 88px;
         text-align: center;
-        padding: 20px 20px 0px 20px;
+        padding: 35px 20px 0px 20px;
         font-size: 36px;
         color: #fff;
         background-image: url('~static/img/home/myteam_bg.png');
@@ -166,7 +166,7 @@ export default {
     }
     .float_card {
         position: absolute;
-        top: 136px;
+        top: 166px;
         left: 30px;
         display: flex;
         justify-content: space-around;
