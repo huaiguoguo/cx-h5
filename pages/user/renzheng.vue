@@ -380,7 +380,7 @@ input {
         .info-item {
             display: flex;
             justify-content: space-between;
-            height: 80px;
+            height: 95px;
             line-height: 95px;
             font-size: 24px;
             color: #999;
@@ -393,8 +393,8 @@ input {
                 align-items: center;
                 // background: blue;
                 span{
-                    flex: 1;
-                    // background: #000;
+                    flex: 1.3;
+                    background: #000;
                     text-align: left;
                     font-size: 24px;
                 }
