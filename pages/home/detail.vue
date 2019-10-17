@@ -349,6 +349,7 @@ export default {
                 padding: 10px 0;
                 border-bottom: 1px solid #eaeaea;
                 .shop_title {
+                    flex:2;
                     display: flex;
                     align-items: center;
                     .pic {
@@ -375,16 +376,26 @@ export default {
                     }
                 }
                 .rate {
+                    flex:1;
+                    width: 170px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    // background: pink;
                     p:nth-child(1) {
+                      flex:1;
                         color: #333;
                         font-size: 28px;
                     }
                     p:nth-child(2) {
+                        flex:1;
                         color: #555;
                         font-size: 24px;
                     }
                 }
                 .btn {
+                  flex:0.8;
                     button {
                         width: 121px;
                         height: 60px;
