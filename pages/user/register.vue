@@ -494,12 +494,18 @@ export default {
                     line-height: 27px;
                     font-family: PingFang-SC-Bold;
                     color: #333333;
+                    border: 0px;
                     margin: 0;
                     // margin-left: 17px;
                     select {
+                        font-size: 26px;
                         width: 100%;
                         border: 0px;
                         margin: 0;
+                        background: #fff;
+                        option{
+                            border: 0px;
+                        }
                     }
                 }
             }
