@@ -30,23 +30,21 @@
                                 <img src="~static/img/nodata.png" alt />
                             </div>
                 </div>
-                <block v-if="list.length != 0">
-                    <div v-for="(item, index) in list.child" :key="index">
-                        <div class="item">
-                            <!-- <div v-if="list.child != 0" class="item" style="display:none"> -->
-                                <div class="name">
-                                    <span>{{item.name}}</span>
-                                    <span>{{item.phone}}</span>
-                                </div>
-                                <div class="person">团队：{{item.teamMemberNumber}}人</div>
-                                <div>
-                                    <span>总业绩：</span>
-                                    <span>￥{{item.yongJin}}</span>
-                                </div>
-                            <!-- </div> -->
-                        </div>
+                <div v-if="list.length != 0">
+                    <div v-for="(item, index) in list.child" :key="index" class="item">
+                        <!-- <div v-if="list.child != 0" class="item" style="display:none"> -->
+                            <div class="name">
+                                <span>{{item.name}}</span>
+                                <span>{{item.phone}}</span>
+                            </div>
+                            <div class="person">团队：{{item.teamMemberNumber}}人</div>
+                            <div class="result">
+                                <span>总业绩：</span>
+                                <span>￥{{item.yongJin}}</span>
+                            </div>
+                        <!-- </div> -->
                     </div>
-                </block>
+                </div>
                 <!-- <div class="item">
                     <div>
                         <span>刘宁</span>
@@ -218,7 +216,7 @@ export default {
         }
         .item-list {
             width: 100%;
-            padding: 0 20px;
+            padding: 0 10px;
             margin-top: 120px;
             .item:first-child {
                 border-top: 1px solid #f3f3f3;
@@ -227,20 +225,30 @@ export default {
                 display: flex;
                 height: 80px;
                 line-height: 80px;
+                width: 100%;
                 justify-content: space-between;
                 border-bottom: 1px solid #f3f3f3;
                 div:nth-child(1) {
-                    flex: 3;
-                    font-size: 24px;
+                    // width:35%;
+                    // flex: 2;
+                    // flex: 3;
+                    font-size: 20px;
                     color: #000;
+                    display: flex;
+                    justify-content: center;
+                    span:nth-child(1){
+                        padding-right: 12px;
+                    }
                 }
                 div:nth-child(2) {
-                    flex: 2;
-                    font-size: 24px;
+                    // width:25%;
+                    // flex: 1;
+                    font-size: 20px;
                     color: #555;
                 }
                 div:nth-child(3) {
-                    flex: 3;
+                    // width:35%;
+                    // flex: 2;
                     // background: pink;
                     display: flex;
                     justify-content: space-between;
@@ -250,17 +258,9 @@ export default {
                         color: #555;
                     }
                     span:nth-child(2) {
-                        font-size: 26px;
+                        font-size: 24px;
                         color: #333;
                     }
-                }
-                .name{
-                    span{
-                        font-size: 24px;
-                    }
-                }
-                .person{
-                    font-size: 24px;
                 }
             }
         }
