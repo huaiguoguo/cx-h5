@@ -203,7 +203,10 @@ export default {
                     console.log(res)
                     this.$toast.center(res.data.msg)
                     if (res.data.status === 1) {
+                        this.$toast.center('上传成功')
                         this.setFormdataImg(type, res.data.data.src)
+                    } else {
+                        this.$toast.center('上传失败')
                     }
                 })
                 .catch((err) => {
