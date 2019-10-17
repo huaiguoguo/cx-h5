@@ -376,7 +376,7 @@ export default {
                     }
                 }
                 .rate {
-                    flex:1;
+                    flex:1.3;
                     width: 170px;
                     display: flex;
                     flex-direction: column;
