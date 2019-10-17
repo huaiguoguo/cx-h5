@@ -325,7 +325,7 @@ body {
         font-weight: normal;
         font-stretch: normal;
         color: #333;
-        box-shadow: 0px 20px 30px -10px rgba(51, 51, 51, 0.1);
+        // box-shadow: 0px 20px 30px -10px rgba(51, 51, 51, 0.1);
         padding: 35px 20px 20px 20px;
         .goback {
             width: 16px;
