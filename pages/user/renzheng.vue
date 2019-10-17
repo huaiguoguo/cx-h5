@@ -14,8 +14,8 @@
     <div class="space-div"></div>
     <div class="info-list">
       <div class="info-item">
-        <div>
-          真实姓名
+        <div class="item-left-input">
+          <span>真实姓名</span>
           <input v-model="formData.name" type="text" name="name" placeholder="(请填写本人真实姓名)" />
         </div>
         <div class="item-right-img" @click="formData.name = ''">
@@ -23,8 +23,8 @@
         </div>
       </div>
       <div class="info-item">
-        <div>
-          身份证号
+        <div class="item-left-input">
+          <span>身份证号</span>
           <input v-model="formData.idCardNo" type="text" name="idCardNo" placeholder="(请填写本人身份证号)" />
         </div>
         <div class="item-right-img" @click="formData.idCardNo = ''">
@@ -32,8 +32,8 @@
         </div>
       </div>
       <div class="info-item">
-        <div>
-          银行卡号
+        <div class="item-left-input">
+          <span>银行卡号</span>
           <input v-model="formData.bankNo" type="text" name="bankNo" placeholder="(请选填写本人真实姓名办理的银行卡号)" />
         </div>
         <div class="item-right-img" @click="formData.bankNo = ''">
@@ -41,8 +41,8 @@
         </div>
       </div>
       <div class="info-item">
-        <div>
-          支付宝账号
+        <div class="item-left-input">
+          <span>支付宝账号</span>
           <input v-model="formData.alipayNo" type="text" name="alipayNo" placeholder="(请选填写本人支付宝账号并上传收款码)" />
         </div>
         <div class="item-right-img" @click="formData.alipayNo = ''">
@@ -50,8 +50,8 @@
         </div>
       </div>
       <div class="info-item">
-        <div>
-          微信号
+        <div class="item-left-input">
+          <span>微信号</span>
           <input v-model="formData.wechatNo" type="text" name="wechatNo" placeholder="(请选选填写本人微信收款码)" />
         </div>
         <div class="item-right-img" @click="formData.wechatNo = ''">
@@ -59,8 +59,8 @@
         </div>
       </div>
       <div class="info-item">
-        <div>
-          USDT
+        <div class="item-left-input">
+          <span>USDT</span>
           <input v-model="formData.usdtAddress" type="text" name="usdtAddress" placeholder="(请选填写本人usdt链接并上传二维码)" />
         </div>
         <div class="item-right-img" @click="formData.usdtAddress = ''">
@@ -382,11 +382,25 @@ input {
             color: #999;
             border-bottom: 1px solid #e8e8e8;
             color: #666;
-            input {
-                width: 500px;
-                margin-left: 10px;
-                font-size: 24px;
-                caret-color: #1296db;
+            .item-left-input{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // background: blue;
+                span{
+                    flex: 1;
+                    // background: #000;
+                    text-align: left;
+                }
+                input {
+                    flex: 4;
+                    // background: pink;
+                    width: 500px;
+                    margin-left: 10px;
+                    font-size: 24px;
+                    caret-color: #1296db;
+                }
             }
             .item-right-img {
                 width: 17px;
