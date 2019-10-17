@@ -313,7 +313,7 @@ input {
         font-stretch: normal;
         color: #333;
         box-shadow: 0px 50px 100px -30px rgba(0, 0, 0, 0.13);
-        padding: 35px 20px 0px 20px;
+        padding: 35px 20px 20px 20px;
         .goback {
             width: 16px;
             // height: 32px;
