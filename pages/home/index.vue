@@ -360,7 +360,7 @@ export default {
         },
         addTodo(e) {},
         weikaiqi() {
-            this.$toast.center('此功能暂未开放')
+            this.$toast('此功能暂未开放')
         },
         isIPhoneXBak(fn) {
             const u = navigator.userAgent

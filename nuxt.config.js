@@ -60,7 +60,8 @@ export default {
         { src: '~/plugins/vue-swiper.js', ssr: false },
         { src: '~/plugins/vuerify.js', ssr: false },
         { src: '~/plugins/vue-clipboard.js', ssr: false },
-        { src: '~/plugins/toast.js', ssr: false }
+        // { src: '~/plugins/toast.js', ssr: false },
+        { src: '~/plugins/vant.js', ssr: false }
         // { src: '~/plugins/echarts.js', ssr: false },
         // { src: '~/plugins/clipboard.js', ssr: false }
         // { src: '~/plugins/touch.js', ssr: false }
@@ -124,7 +125,7 @@ export default {
         postcss: [
             require('postcss-px2rem')({
                 remUnit: 75, // 转换基本单位
-                exclude: '/(node_module)/i'
+                exclude: /(node_module)/i
                 // propList: ['*'],
                 // rootValue: 37.5, // 默认根目录字体大小(px)
                 // unitPrecision: 5, // 保留小数位
