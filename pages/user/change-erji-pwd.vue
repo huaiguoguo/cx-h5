@@ -229,7 +229,7 @@ input {
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        height: 88px;
+        // height: 88px;
         line-height: 88px;
         font-size: 36px;
         font-weight: normal;
