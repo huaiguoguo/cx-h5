@@ -201,6 +201,7 @@ export default {
                 .post(this.uploadAlbumApi, formData, options)
                 .then((res) => {
                     console.log(res)
+                    this.$toast.center(res.data.msg)
                     if (res.data.status === 1) {
                         this.setFormdataImg(type, res.data.data.src)
                     }
