@@ -553,7 +553,7 @@ export default {
             position: absolute;
             z-index: 8888;
             top: 20%;
-            left: 30px;
+            left: 40px;
             img {
                 max-width: 100%;
                 max-height: 100%;
