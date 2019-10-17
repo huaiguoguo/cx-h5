@@ -30,7 +30,7 @@
             </div>
         </div>
 
-        <div v-if="dynamicData.list" class="list">
+        <div v-if="dynamicData.list.length>0" class="list">
             <div v-for="(item,index) in dynamicData.list" :key="index" class="list-item">
                 <div class="item-left">
                     <div>推荐人：{{item.buyer}}</div>
