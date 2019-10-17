@@ -108,7 +108,9 @@ export default {
         }
     },
     beforeCreate() {},
-    created() {},
+    created() {
+        this.getBalance()
+    },
     beforeMount() {},
     mounted() {
         this.isIPhoneX()
@@ -118,7 +120,7 @@ export default {
             _this.$router.push('/user/login')
             return false
         }
-        this.getBalance()
+        // this.getBalance()
         this.tixianLists()
         this.$message.config({
             top: `300px`,
@@ -168,8 +170,10 @@ export default {
                 })
                 .then((res) => {
                     res = res.data.data
+                    if (res.data.status === 1) {
+                        this.list = res
+                    }
                     console.log(res)
-                    this.list = res
                 })
                 .catch(function(err) {
                     console.log(err)
@@ -232,7 +236,7 @@ body {
         color: #fff;
         box-shadow: 0px 1px 10px 0px rgba(51, 51, 51, 0.1);
         background-color: #2352c6;
-        padding: 20px;
+        padding: 35px 20px 0px 20px;
         .goback {
             width: 16px;
             // height: 32px;
