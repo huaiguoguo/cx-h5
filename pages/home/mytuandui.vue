@@ -34,13 +34,13 @@
                     <div v-for="(item, index) in list.child" :key="index" class="item">
                         <!-- <div v-if="list.child != 0" class="item" style="display:none"> -->
                             <div class="name">
-                                <span>{{item.name}}</span>
-                                <span>{{item.phone}}</span>
+                                <span style="font-size: 0.35rem">{{item.name}}</span>
+                                <span style="font-size: 0.35rem">{{item.phone}}</span>
                             </div>
-                            <div class="person">团队：{{item.teamMemberNumber}}人</div>
+                            <div class="person" style="font-size: 0.35rem">团队：{{item.teamMemberNumber}}人</div>
                             <div class="result">
-                                <span>总业绩：</span>
-                                <span>￥{{item.yongJin}}</span>
+                                <span style="font-size: 0.35rem">业绩：</span>
+                                <span style="font-size: 0.35rem">￥{{item.yongJin}}</span>
                             </div>
                         <!-- </div> -->
                     </div>
@@ -222,19 +222,36 @@ export default {
                 border-top: 1px solid #f3f3f3;
             }
             .item {
-                display: flex;
                 height: 80px;
                 line-height: 80px;
                 width: 100%;
                 justify-content: space-between;
                 border-bottom: 1px solid #f3f3f3;
                 white-space: nowrap ;
-                .name,.person,.result{
+                font-size: 0.35rem;
+                .name{
                     display: inline-block;
-                    width:33%;
+                    width:36%;
                     font-size: 0.35rem;
                     text-align: left;
                     overflow: auto;
+                    white-space: nowrap ;
+                }
+                .person{
+                    display: inline-block;
+                    width:24%;
+                    font-size: 0.35rem;
+                    text-align: left;
+                    overflow: auto;
+                    white-space: nowrap ;
+                }
+                .result{
+                    display: inline-block;
+                    width:40%;
+                    font-size: 0.35rem;
+                    text-align: left;
+                    overflow: auto;
+                    white-space: nowrap ;
                 }
             }
         }
