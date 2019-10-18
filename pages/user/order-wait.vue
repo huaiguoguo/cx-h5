@@ -535,8 +535,9 @@ export default {
                         display: flex;
                         justify-content: flex-end;
                         span {
+                            display: inline-block;
                             margin: 0 10px;
-                            padding: 2px 10px;
+                            padding: 0.1rem 0.2rem;
                             color: #666;
                             border: 2px solid #666;
                             border-radius: 5px;
