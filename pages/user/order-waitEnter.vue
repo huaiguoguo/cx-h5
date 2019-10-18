@@ -535,12 +535,17 @@ export default {
                         display: flex;
                         justify-content: flex-end;
                         span {
+                            width: 2rem;
+                            height: 1rem;
                             display: inline-block;
                             margin: 0 10px;
-                            padding: 0.1rem 0.2rem;
+                            padding: 0.1rem;
                             color: #666;
                             border: 2px solid #666;
                             border-radius: 5px;
+                            line-height: 0.7rem;
+                            text-align: center;
+                            font-size: 0.4rem;
                         }
                         .span_active {
                             border: 2px solid #666;
