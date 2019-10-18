@@ -414,6 +414,7 @@ textarea {
 .container {
     body {
         box-sizing: border-box;
+        font-size: 0.4rem;
     }
     width: 100%;
     height: 100%;
@@ -422,10 +423,10 @@ textarea {
     // align-items: center;
 
     // text-align: center;
-    font-size: 20px;
+    font-size: 0.4rem;
     // background: red;
     a {
-        font-size: 25px;
+        font-size: 0.4rem;
         color: red;
     }
     .header {
@@ -468,7 +469,6 @@ textarea {
             justify-content: space-between;
             height: 95px;
             line-height: 95px;
-            font-size: 24px;
             color: #999;
             border-bottom: 1px solid #e8e8e8;
             color: #666;
@@ -480,7 +480,7 @@ textarea {
                 width: 500px;
                 text-indent: 35px;
                 margin-left: 10px;
-                font-size: 24px;
+                font-size: 0.4rem;
                 caret-color: #1296db;
             }
             .item-right-img {
@@ -495,6 +495,7 @@ textarea {
                 height: 145px;
                 line-height: 40px;
                 padding: 35px 0;
+                font-size: 0.4rem;
             }
         }
         .info-item:last-child {
@@ -520,7 +521,7 @@ textarea {
             width: 118px;
             height: 29px;
             font-family: PingFang-SC-Medium;
-            font-size: 30px;
+            font-size: 0.4rem;
             color: #ffffff;
         }
     }
