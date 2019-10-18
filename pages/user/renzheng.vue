@@ -42,6 +42,24 @@
       </div>
       <div class="info-item">
         <div class="item-left-input">
+          <span>开户银行</span>
+          <input v-model="formData.bankName" type="text" name="bankName" placeholder="(请选填写银行卡开户银行,比如交通银行)" />
+        </div>
+        <div class="item-right-img" @click="formData.bankName = ''">
+          <img src="~static/img/error.png" alt />
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="item-left-input">
+          <span>开户支行</span>
+          <input v-model="formData.bankName2" type="text" name="bankName2" placeholder="(请选填写开户支行,比如北环路支行)" />
+        </div>
+        <div class="item-right-img" @click="formData.bankName2 = ''">
+          <img src="~static/img/error.png" alt />
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="item-left-input">
           <span>支付宝账号</span>
           <input v-model="formData.alipayNo" type="text" name="alipayNo" placeholder="(请选填写本人支付宝账号并上传收款码)" />
         </div>
@@ -101,6 +119,8 @@ export default {
                 name: '',
                 idCardNo: '',
                 bankNo: '',
+                bankName: '',
+                bankName2: '',
                 alipayNo: '',
                 wechatNo: '',
                 usdtAddress: '',
@@ -239,6 +259,10 @@ export default {
 
             if (!(formData.bankNo || formData.alipayNo || formData.wechatNo || formData.usdtAddress)) {
                 this.$toast.center('银行卡号/支付宝/微信/ustd至少填写一项!')
+                return false
+            }
+            if (formData.bankNo && !formData.bankName) {
+                this.$toast.center('开户行必须填写!')
                 return false
             }
             return true
