@@ -228,39 +228,13 @@ export default {
                 width: 100%;
                 justify-content: space-between;
                 border-bottom: 1px solid #f3f3f3;
-                div:nth-child(1) {
-                    // width:35%;
-                    // flex: 2;
-                    // flex: 3;
-                    font-size: 20px;
-                    color: #000;
-                    display: flex;
-                    justify-content: center;
-                    span:nth-child(1){
-                        padding-right: 12px;
-                    }
-                }
-                div:nth-child(2) {
-                    // width:25%;
-                    // flex: 1;
-                    font-size: 20px;
-                    color: #555;
-                }
-                div:nth-child(3) {
-                    // width:35%;
-                    // flex: 2;
-                    // background: pink;
-                    display: flex;
-                    justify-content: space-between;
-                    span:nth-child(1) {
-                        // background-color: #000;
-                        font-size: 20px;
-                        color: #555;
-                    }
-                    span:nth-child(2) {
-                        font-size: 24px;
-                        color: #333;
-                    }
+                white-space: nowrap ;
+                .name,.person,.result{
+                    display: inline-block;
+                    width:33%;
+                    font-size: 0.35rem;
+                    text-align: left;
+                    overflow: auto;
                 }
             }
         }
