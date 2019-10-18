@@ -538,12 +538,12 @@ export default {
                             margin: 0 10px;
                             padding: 2px 10px;
                             color: #666;
-                            border: 1px solid #666;
-                            border-radius: 15px;
+                            border: 2px solid #666;
+                            border-radius: 5px;
                         }
                         .span_active {
-                            border: 1px solid #0017fe;
-                            color: #0017fe;
+                            border: 2px solid #666;
+                            border-radius: 5px;
                         }
                     }
                 }
