@@ -10,7 +10,7 @@
     </div>
     <div class="card">
       <div class="item1">
-        <div>银行卡</div>
+        <div></div>
         <div class="middle" @click="isShow=1">
           <div class="bank-img">
             <img :src="payTypeIconDefault" />
@@ -56,10 +56,10 @@
           <div class="titxt">选择提现方式</div>
         </div>
         <div class="paySelect">
-          <div v-if="paySelect.bankNo" @click="selectPayType($event, 0)"><img src="~static/img/yinlian.png"><span>{{paySelect.bankNo}}</span></div>
           <div v-if="paySelect.alipayNo" @click="selectPayType($event, 1)"><img src="~static/img/Alipay.png"><span>{{paySelect.alipayNo}}</span></div>
           <div v-if="paySelect.wechatNo" @click="selectPayType($event, 2)"><img src="~static/img/weChatPay.png"><span>{{paySelect.wechatNo}}</span></div>
-          <div v-if="paySelect.usdtAddress" @click="selectPayType($event, 3)"><img src="~static/img/USDTpay.png"><span>{{paySelect.usdtAddress}}</span></div>
+          <div v-if="paySelect.bankNo" @click="selectPayType($event, 3)"><img src="~static/img/yinlian.png"><span>{{paySelect.bankNo}}</span></div>
+          <div v-if="paySelect.usdtAddress" @click="selectPayType($event, 4)"><img src="~static/img/USDTpay.png"><span>{{paySelect.usdtAddress}}</span></div>
         </div>
       </div>
     </div>
@@ -79,13 +79,13 @@ export default {
             isShow: 2,
             payType: 1,
             payNoDefault: '',
-            payTypeTextDefault: '银行卡',
-            payTypeText: ['银行卡', '支付宝', '微信', 'USDT'],
-            payTypeIconDefault: require('../../static/img/yinlian.png'),
+            payTypeTextDefault: '支付宝',
+            payTypeText: ['支付宝', '微信', '银行卡', 'USDT'],
+            payTypeIconDefault: require('../../static/img/Alipay.png'),
             payTypeIcon: [
-                { image: require('../../static/img/yinlian.png') },
                 { image: require('../../static/img/Alipay.png') },
                 { image: require('../../static/img/weChatPay.png') },
+                { image: require('../../static/img/yinlian.png') },
                 { image: require('../../static/img/USDTpay.png') }
             ],
             shiMingUrl: 'user/getShiMing',
@@ -165,21 +165,21 @@ export default {
         //     shade.style.display = 'none'
         // },
         selectPayType(evnt, type) {
-            this.payType = type + 1
-            this.payTypeIconDefault = this.payTypeIcon[type].image
-            this.payTypeTextDefault = this.payTypeText[type]
+            this.payTypeIconDefault = this.payTypeIcon[type - 1].image
+            this.payTypeTextDefault = this.payTypeText[type - 1]
             let payNoDefault
-            if (type === 0) {
-                payNoDefault = this.paySelect.bankNo
-            } else if (type === 1) {
+            if (type === 1) {
                 payNoDefault = this.paySelect.alipayNo
             } else if (type === 2) {
                 payNoDefault = this.paySelect.wechatNo
             } else if (type === 3) {
+                payNoDefault = this.paySelect.bankNo
+            } else if (type === 4) {
                 payNoDefault = this.paySelect.usdtAddress
             }
             this.payNoDefault = payNoDefault
             this.isShow = 2
+            this.payType = type
         },
         cashSubmit() {
             if (parseInt(this.cashMoney) <= 0) {
@@ -202,7 +202,7 @@ export default {
                 return false
             }
             if (parseInt(this.cashConfig.tiXianSwitch) !== 1) {
-                this.$toast.center('您不能提现,请联系管理员')
+                this.$toast.center('系统提现通道暂停中')
                 return false
             }
             const param = {
@@ -220,7 +220,7 @@ export default {
                         this.$toast.center(res.data.msg)
                         return false
                     }
-                    this.$toast.center('提现成功', 1, function() {
+                    this.$toast.center('提现申请提交成功,请等待审核', 1, function() {
                         _this.$router.push('/user/tixianSuccess')
                     })
                 })
@@ -238,17 +238,16 @@ export default {
                         this.paySelect = res.data.data
                         this.payTypeIconDefault = this.payTypeIcon[0].image
                         this.payTypeTextDefault = this.payTypeText[0]
-
-                        if (this.paySelect.bankNo) {
-                            this.payNoDefault = this.paySelect.bankNo
+                        if (this.paySelect.alipayNo) {
+                            this.payNoDefault = this.paySelect.alipayNo
                             this.payTypeIconDefault = this.payTypeIcon[0].image
                             this.payTypeTextDefault = this.payTypeText[0]
-                        } else if (this.paySelect.alipayNo) {
-                            this.payNoDefault = this.paySelect.alipayNo
-                            this.payTypeIconDefault = this.payTypeIcon[1].image
-                            this.payTypeTextDefault = this.payTypeText[1]
                         } else if (this.paySelect.wechatNo) {
                             this.payNoDefault = this.paySelect.wechatNo
+                            this.payTypeIconDefault = this.payTypeIcon[1].image
+                            this.payTypeTextDefault = this.payTypeText[1]
+                        } else if (this.paySelect.bankNo) {
+                            this.payNoDefault = this.paySelect.bankNo
                             this.payTypeIconDefault = this.payTypeIcon[2].image
                             this.payTypeTextDefault = this.payTypeText[2]
                         } else if (this.paySelect.usdtAddress) {
